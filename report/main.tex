@@ -1,0 +1,71 @@
+\documentclass[fleqn, a4paper, 12pt, russian]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english, main = russian]{babel}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{amsmath}
+\usepackage{pdflscape}
+\usepackage{caption, subcaption}
+\graphicspath{{../imgs/}}
+
+\captionsetup[figure]{name = Рисунок, labelsep = endash}
+\captionsetup[table]{name = Таблица, labelsep = endash, justification=raggedright, singlelinecheck=false}
+\setlength{\mathindent}{0pt}
+
+\begin{document}
+
+\begin{landscape}
+	
+$q = \begin{bmatrix} a(t)&x(t)&y(t) \end{bmatrix}$
+
+$K = (m((c_y\dot{a(t)}\cos(a(t)) - \dot{x(t)} + c_x\dot{a(t)}\sin(a(t)))(c_y\cos(a(t))\dot{a(t)} - \dot{x(t)} + c_x\sin(a(t))\dot{a(t)}) + (\dot{y(t)}) + c_x\dot{a(t)}\cos(a(t)) - c_y\dot{a(t)}\sin(a(t)))(\dot{y(t)} + c_x\cos(a(t))\dot{a(t)} - c_y\sin(a(t))\dot{a(t)})))/2 + (I\dot{a(t)}\dot{a(t)})/2$
+
+$\frac{\partial K}{\partial q} = \left(\begin{array}{c} 0\\ 0\\ 0 \end{array}\right)$
+
+$\tiny{\frac{\partial K}{\partial \dot{q}}=\left(\begin{array}{c} I\,\dot{a(t)}-\frac{\mathrm{c_y}\,m\,\cos\left(a\left(t\right)\right)\,\dot{x(t)}}{2}+\frac{\mathrm{c_x}\,m\,\cos\left(a\left(t\right)\right)\,\dot{y(t)} \left(t\right)}{2}-\frac{\mathrm{c_x}\,m\,\sin\left(a\left(t\right)\right)\,\dot{x(t)}}{2}-\frac{\mathrm{c_y}\,m\,\sin\left(a\left(t\right)\right)\,\dot{y(t)}}{2}+{\mathrm{c_x}}^2\,m\,\cos(a(t))\,\dot{a(t)}+{\mathrm{c_y}}^2\,m\,\cos\textbf{a(t)}\,\dot{a(t)}-\frac{\mathrm{c_y}\,m\,\cos\left(\left(a\left(t\right)\right)\right)\,\dot{x(t)}}{2}+\frac{\mathrm{c_x}\,m\,\cos\left(\left(a\left(t\right)\right)\right)\,\dot{y(t)}}{2}-\frac{\mathrm{c_x}\,m\,\sin\left(\left(a\left(t\right)\right)\right)\,\dot{x(t)}}{2}-\frac{\mathrm{c_y}\,m\,\sin\left(\left(a\left(t\right)\right)\right)\,\dot{y(t)}}{2}\\ -\frac{m\,\left(\mathrm{c_y}\,\cos\left(\left(a\left(t\right)\right)\right)\,\dot{a(t)}-2\,\dot{x(t)}+\mathrm{c_x}\,\sin\left(\left(a\left(t\right)\right)\right)\,\dot{a(t)}+\mathrm{c_y}\,\cos\left(a\left(t\right)\right)\,\dot{a(t)}+\mathrm{c_x}\,\sin\left(a\left(t\right)\right)\,\dot{a(t)}\right)}{2}\\ \frac{m\,\left(2\,\dot{y(t)}+\mathrm{c_x}\,\cos\left(\left(a\left(t\right)\right)\right)\,\dot{a(t)}-\mathrm{c_y}\,\sin\left(\left(a\left(t\right)\right)\right)\,\dot{a(t)}+\mathrm{c_x}\,\cos\left(a\left(t\right)\right)\,\dot{a(t)}-\mathrm{c_y}\,\sin\left(a\left(t\right)\right)\,\dot{a(t)}\right)}{2} \end{array}\right)}$
+
+$\tiny{\frac{\partial}{\partial t}\frac{\partial K}{\partial \dot{q}}=\left(\begin{array}{c} I\,\ddot{a(t)}\left(t\right)-\frac{\mathrm{c_y}\,m\,\cos\left(\left(a\left(t\right)\right)\right)\,\ddot{x(t)}\left(t\right)}{2}+\frac{\mathrm{c_x}\,m\,\cos\left(\left(a\left(t\right)\right)\right)\,\ddot{y(t)}\left(t\right)}{2}-\frac{\mathrm{c_x}\,m\,\sin\left(\left(a\left(t\right)\right)\right)\,\ddot{x(t)}\left(t\right)}{2}-\frac{\mathrm{c_y}\,m\,\sin\left(\left(a\left(t\right)\right)\right)\,\ddot{y(t)}\left(t\right)}{2}-{\mathrm{c_x}}^2\,m\,{\left|\dot{a(t)}\right|}^2\,\sin(a(t))-{\mathrm{c_y}}^2\,m\,{\left|\dot{a(t)}\right|}^2\,\sin(a(t))-\frac{\mathrm{c_y}\,m\,\cos\left(a\left(t\right)\right)\,\ddot{x(t)}\left(t\right)}{2}+\frac{\mathrm{c_x}\,m\,\cos\left(a\left(t\right)\right)\,\ddot{y(t)}\left(t\right)}{2}-\frac{\mathrm{c_x}\,m\,\sin\left(a\left(t\right)\right)\,\ddot{x(t)}\left(t\right)}{2}-\frac{\mathrm{c_y}\,m\,\sin\left(a\left(t\right)\right)\,\ddot{y(t)}\left(t\right)}{2}+{\mathrm{c_x}}^2\,m\,\sin(a(t))\,{\left(\dot{a(t)}\right)}^2+{\mathrm{c_y}}^2\,m\,\sin(a(t))\,{\left(\dot{a(t)}\right)}^2+{\mathrm{c_x}}^2\,m\,\cos(a(t))\,\ddot{a(t)}\left(t\right)+{\mathrm{c_y}}^2\,m\,\cos(a(t))\,\ddot{a(t)}\left(t\right)-\frac{\mathrm{c_x}\,m\,\left(\dot{a(t)}\right)\,\cos\left(\left(a\left(t\right)\right)\right)\,\dot{x(t)}}{2}-\frac{\mathrm{c_y}\,m\,\left(\dot{a(t)}\right)\,\cos\left(\left(a\left(t\right)\right)\right)\,\dot{y(t)}}{2}+\frac{\mathrm{c_y}\,m\,\left(\dot{a(t)}\right)\,\sin\left(\left(a\left(t\right)\right)\right)\,\dot{x(t)}}{2}-\frac{\mathrm{c_x}\,m\,\left(\dot{a(t)}\right)\,\sin\left(\left(a\left(t\right)\right)\right)\,\dot{y(t)}}{2}-\frac{\mathrm{c_x}\,m\,\cos\left(a\left(t\right)\right)\,\dot{a(t)}\,\dot{x(t)}}{2}-\frac{\mathrm{c_y}\,m\,\cos\left(a\left(t\right)\right)\,\dot{a(t)}\,\dot{y(t)}}{2}+\frac{\mathrm{c_y}\,m\,\sin\left(a\left(t\right)\right)\,\dot{a(t)}\,\dot{x(t)}}{2}-\frac{\mathrm{c_x}\,m\,\sin\left(a\left(t\right)\right)\,\dot{y(t)}\,\dot{a(t)}}{2}\\ -\frac{m\,\left(\mathrm{c_x}\,\cos\left(a\left(t\right)\right)\,{\left(\dot{a(t)}\right)}^2-\mathrm{c_y}\,\sin\left(a\left(t\right)\right)\,{\left(\dot{a(t)}\right)}^2+\mathrm{c_y}\,\cos\left(a\left(t\right)\right)\,\ddot{a(t)}\left(t\right)+\mathrm{c_x}\,\sin\left(a\left(t\right)\right)\,\ddot{a(t)}\left(t\right)-2\,\ddot{x(t)}\left(t\right)+\mathrm{c_y}\,\cos\left(\left(a\left(t\right)\right)\right)\,\ddot{a(t)}\left(t\right)+\mathrm{c_x}\,\sin\left(\left(a\left(t\right)\right)\right)\,\ddot{a(t)}\left(t\right)+\mathrm{c_x}\,{\left|\dot{a(t)}\right|}^2\,\cos\left(\left(a\left(t\right)\right)\right)-\mathrm{c_y}\,{\left|\dot{a(t)}\right|}^2\,\sin\left(\left(a\left(t\right)\right)\right)\right)}{2}\\ -\frac{m\,\left(\mathrm{c_y}\,\cos\left(a\left(t\right)\right)\,{\left(\dot{a(t)}\right)}^2+\mathrm{c_x}\,\sin\left(a\left(t\right)\right)\,{\left(\dot{a(t)}\right)}^2-\mathrm{c_x}\,\cos\left(a\left(t\right)\right)\,\ddot{a(t)}\left(t\right)+\mathrm{c_y}\,\sin\left(a\left(t\right)\right)\,\ddot{a(t)}\left(t\right)-2\,\ddot{y(t)}\left(t\right)-\mathrm{c_x}\,\cos\left(\left(a\left(t\right)\right)\right)\,\ddot{a(t)}\left(t\right)+\mathrm{c_y}\,\sin\left(\left(a\left(t\right)\right)\right)\,\ddot{a(t)}\left(t\right)+\mathrm{c_y}\,{\left|\dot{a(t)}\right|}^2\,\cos\left(\left(a\left(t\right)\right)\right)+\mathrm{c_x}\,{\left|\dot{a(t)}\right|}^2\,\sin\left(\left(a\left(t\right)\right)\right)\right)}{2} \end{array}\right)}$
+
+
+$M(q)\begin{bmatrix}
+	\ddot{a(t)}\\
+	\ddot{x(t)}\\
+	\ddot{y(t)}\\
+\end{bmatrix}=\left(\begin{array}{c} -I\,\mathrm{\ddot{a(t)}}-\frac{m\,\left(2\,\mathrm{c_x}\,\left(\mathrm{\ddot{y(t)}}+\mathrm{c_x}\,\mathrm{\ddot{a(t)}}\right)-2\,\mathrm{c_y}\,\left(\mathrm{\ddot{x(t)}}-\mathrm{c_y}\,\mathrm{\ddot{a(t)}}\right)\right)}{2}\\ -m\,\left(\mathrm{\ddot{x(t)}}-\mathrm{c_y}\,\mathrm{\ddot{a(t)}}\right)\\ -m\,\left(\mathrm{\ddot{y(t)}}+\mathrm{c_x}\,\mathrm{\ddot{a(t)}}\right) \end{array}\right)$
+
+$C\begin{bmatrix}
+\dot{a(t)}\\
+\dot{x(t)}\\
+\dot{y(t)}\\
+\end{bmatrix} = \left(\begin{array}{c} \mathrm{\dot{a(t)}}\,m\,\left(\mathrm{c_x}\,\mathrm{\dot{x(t)}}+\mathrm{c_y}\,\mathrm{\dot{y(t)}}\right)\\ \mathrm{c_x}\,{\mathrm{\dot{a(t)}}}^2\,m\\ \mathrm{c_y}\,{\mathrm{\dot{a(t)}}}^2\,m \end{array}\right)$
+
+$G=\left(\begin{array}{c} 0\\ 0\\ 0 \end{array}\right)$
+
+
+$M(q) = \begin{bmatrix}
+	-I-mc_x^2+c_y^2&-mc_y&mc_x\\
+	mc_y&-m&0\\
+	mc_x&0&-m\\
+\end{bmatrix}$
+
+$B(q) = \begin{bmatrix}
+    (l+c_x)R&	(l-c_x)R\\
+	R\cos(a)&	R\cos(a)\\
+	R\sin(a)&	R\sin(a)\\
+\end{bmatrix}$
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width = 0.7\textwidth]{modeling62-x.jpg}
+	\caption{Переменные состояния} 
+	\label{modeling62-x}
+\end{figure}
+
+Тест привет
+
+\end{landscape}
+	
+\end{document}
