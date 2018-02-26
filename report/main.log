@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.10)  21 FEB 2018 14:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.10)  26 FEB 2018 15:50
 entering extended mode
 **./main.tex
 (main.tex
@@ -818,7 +818,7 @@ m/it/12 a\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\OT1/cmr/m/n/12 ))[] \OMS/cmsy/m/n/
 LaTeX Font Warning: Command \tiny invalid in math mode on input line 28.
 
 
-Overfull \hbox (222.00735pt too wide) in paragraph at lines 28--29
+Overfull \hbox (207.00735pt too wide) in paragraph at lines 28--29
 []$[]$ 
  []
 
@@ -826,22 +826,26 @@ Overfull \hbox (222.00735pt too wide) in paragraph at lines 28--29
 LaTeX Font Warning: Command \tiny invalid in math mode on input line 30.
 
 
-Overfull \hbox (1358.5946pt too wide) in paragraph at lines 30--31
+Overfull \hbox (1326.12614pt too wide) in paragraph at lines 30--31
 []$[]$ 
  []
 
-<../imgs/modeling62-x.jpg, id=1, 1204.5pt x 903.375pt>
-File: ../imgs/modeling62-x.jpg Graphic file (type jpg)
-<use ../imgs/modeling62-x.jpg>
-Package pdftex.def Info: ../imgs/modeling62-x.jpg  used on input line 62. on in
-put line 62.
-Package pdftex.def Info: Requested size: 272.99881pt x 204.7531pt on input line
- 62.
 [1
 
 
-{C:/Users/aokly/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2 <../imgs
-/modeling62-x.jpg>]
+{C:/Users/aokly/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<../imgs/modeling62-x.jpg, id=20, 1204.5pt x 903.375pt>
+File: ../imgs/modeling62-x.jpg Graphic file (type jpg)
+<use ../imgs/modeling62-x.jpg>
+Package pdftex.def Info: ../imgs/modeling62-x.jpg  used on input line 76. on in
+put line 76.
+Package pdftex.def Info: Requested size: 272.99881pt x 204.7531pt on input line
+ 76.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[2] [3 <../imgs/modeling62-x.jpg>]
 
 Package caption Warning: Unused \captionsetup[table] on input line 15.
 See the caption package documentation for explanation.
@@ -849,28 +853,27 @@ See the caption package documentation for explanation.
 (main.aux) ) 
 Here is how much of TeX's memory you used:
  5075 strings out of 493312
- 68966 string characters out of 3138899
- 158249 words of memory out of 3000000
+ 68954 string characters out of 3138899
+ 153249 words of memory out of 3000000
  8526 multiletter control sequences out of 15000+200000
  12098 words of font info for 33 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,14n,39p,3477b,324s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,12n,39p,2156b,324s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\aokly\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a
 \dpi600\larm1200.pk> <C:\Users\aokly\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\l
 h\lh-t2a\dpi600\labx0600.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-extra/cmex7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmm
-i12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (2 pages, 310638 bytes).
+/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+sy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on main.pdf (3 pages, 305166 bytes).
 PDF statistics:
  98 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

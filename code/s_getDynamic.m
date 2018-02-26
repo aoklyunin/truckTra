@@ -52,4 +52,3 @@ disp(latex(simplify(C)));
 v = [0,0,0,0,0,0,at,xt,yt];
 G = subs(L,[diff(a(t),t,t),diff(x(t),t,t),diff(y(t),t,t),diff(a(t),t),diff(x(t),t),diff(y(t),t),a(t),x(t),y(t)],v);
 disp(latex(simplify(G)));
-
