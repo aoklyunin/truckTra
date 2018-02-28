@@ -1,0 +1,83 @@
+\documentclass[fleqn, a4paper, 12pt, russian]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english, main = russian]{babel}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{amsmath}
+\usepackage{pdflscape}
+\usepackage{caption, subcaption}
+\graphicspath{{../imgs/}}
+
+\captionsetup[figure]{name = Рисунок, labelsep = endash}
+\captionsetup[table]{name = Таблица, labelsep = endash, justification=raggedright, singlelinecheck=false}
+\setlength{\mathindent}{0pt}
+
+\begin{document}
+	
+	\begin{landscape}
+		
+		
+		\begin{equation}
+		\tiny{
+			R=
+			(\begin{array}{c} x(t)-\mathrm{cy}\,\sin(a(t))+\mathrm{cx}\,\cos(a(t))\\ y(t)+\mathrm{cx}\,\sin(a(t))+\mathrm{cy}\,\cos(a(t))\\ 1 \end{array})
+		}\end{equation}
+		\begin{equation}
+		\tiny{
+			dR=
+			(\begin{array}{c} \frac{\partial }{\partial t} x(t)-\mathrm{cy}\,\cos(a(t))\,\frac{\partial }{\partial t} a(t)-\mathrm{cx}\,\sin(a(t))\,\frac{\partial }{\partial t} a(t)\\ \frac{\partial }{\partial t} y(t)+\mathrm{cx}\,\cos(a(t))\,\frac{\partial }{\partial t} a(t)-\mathrm{cy}\,\sin(a(t))\,\frac{\partial }{\partial t} a(t)\\ 0 \end{array})
+		}\end{equation}
+		
+	$\tiny{
+			dR^TdR=
+			(\mathrm{cy}\,(\frac{\partial }{\partial t} a(t))\,\cos((a(t)))-(\frac{\partial }{\partial t} x(t))+\mathrm{cx}\,(\frac{\partial }{\partial t} a(t))\,\sin((a(t))))\,(\mathrm{cy}\,\cos(a(t))\,\frac{\partial }{\partial t} a(t)-\frac{\partial }{\partial t} x(t)+\mathrm{cx}\,\sin(a(t))\,\frac{\partial }{\partial t} a(t))+((\frac{\partial }{\partial t} y(t))+}$
+			
+			
+			$\tiny{\mathrm{cx}\,(\frac{\partial }{\partial t} a(t))\,\cos((a(t)))-\mathrm{cy}\,(\frac{\partial }{\partial t} a(t))\,\sin((a(t))))\,(\frac{\partial }{\partial t} y(t)+\mathrm{cx}\,\cos(a(t))\,\frac{\partial }{\partial t} a(t)-\mathrm{cy}\,\sin(a(t))\,\frac{\partial }{\partial t} a(t))
+		}$
+		
+		
+		$\tiny{
+			K=
+			\frac{m\,((\mathrm{cy}\,(\frac{\partial }{\partial t} a(t))\,\cos((a(t)))-(\frac{\partial }{\partial t} x(t))+\mathrm{cx}\,(\frac{\partial }{\partial t} a(t))\,\sin((a(t))))\,(\mathrm{cy}\,\cos(a(t))\,\frac{\partial }{\partial t} a(t)-\frac{\partial }{\partial t} x(t)+\mathrm{cx}\,\sin(a(t))\,\frac{\partial }{\partial t} a(t))+((\frac{\partial }{\partial t} y(t))}{2}+}$	
+		
+		
+		$\tiny{\frac{\mathrm{cx}\,(\frac{\partial }{\partial t} a(t))\,\cos((a(t)))-\mathrm{cy}\,(\frac{\partial }{\partial t} a(t))\,\sin((a(t))))\,(\frac{\partial }{\partial t} y(t)+\mathrm{cx}\,\cos(a(t))\,\frac{\partial }{\partial t} a(t)-\mathrm{cy}\,\sin(a(t))\,\frac{\partial }{\partial t} a(t)))}+\frac{I\,(\frac{\partial }{\partial t} a(t))\,\frac{\partial }{\partial t} a(t)}{2}
+		}$
+	
+		\begin{equation}
+		\tiny{
+			dRTRdQ=
+			(\begin{array}{c} -2\,\mathrm{dat}\,(\mathrm{cx}\,\mathrm{dxt}\,\cos(\mathrm{at})+\mathrm{cy}\,\mathrm{dyt}\,\cos(\mathrm{at})+\mathrm{cx}\,\mathrm{dyt}\,\sin(\mathrm{at})-\mathrm{cy}\,\mathrm{dxt}\,\sin(\mathrm{at}))\\ 0\\ 0 \end{array})
+		}\end{equation}
+		\begin{equation}
+		\tiny{
+			dKdq=
+			(\begin{array}{c} -m\,\frac{\partial }{\partial t} a(t)\,(\mathrm{cx}\,\cos(a(t))\,\frac{\partial }{\partial t} x(t)+\mathrm{cy}\,\cos(a(t))\,\frac{\partial }{\partial t} y(t)-\mathrm{cy}\,\sin(a(t))\,\frac{\partial }{\partial t} x(t)+\mathrm{cx}\,\sin(a(t))\,\frac{\partial }{\partial t} y(t))\\ 0\\ 0 \end{array})
+		}\end{equation}
+		\begin{equation}
+		\tiny{
+			dKddq=
+			(\begin{array}{c} I\,\frac{\partial }{\partial t} a(t)-\frac{\mathrm{cy}\,m\,\cos(a(t))\,\frac{\partial }{\partial t} x(t)}{2}+\frac{\mathrm{cx}\,m\,\cos(a(t))\,\frac{\partial }{\partial t} y(t)}{2}-\frac{\mathrm{cx}\,m\,\sin(a(t))\,\frac{\partial }{\partial t} x(t)}{2}-\frac{\mathrm{cy}\,m\,\sin(a(t))\,\frac{\partial }{\partial t} y(t)}{2}+{\mathrm{cx}}^2\,m\,\cos((a(t))-a(t))\,\frac{\partial }{\partial t} a(t)+{\mathrm{cy}}^2\,m\,\cos((a(t))-a(t))\,\frac{\partial }{\partial t} a(t)-\frac{\mathrm{cy}\,m\,\cos((a(t)))\,\frac{\partial }{\partial t} x(t)}{2}+\frac{\mathrm{cx}\,m\,\cos((a(t)))\,\frac{\partial }{\partial t} y(t)}{2}-\frac{\mathrm{cx}\,m\,\sin((a(t)))\,\frac{\partial }{\partial t} x(t)}{2}-\frac{\mathrm{cy}\,m\,\sin((a(t)))\,\frac{\partial }{\partial t} y(t)}{2}\\ -\frac{m\,(\mathrm{cy}\,\cos((a(t)))\,\frac{\partial }{\partial t} a(t)-2\,\frac{\partial }{\partial t} x(t)+\mathrm{cx}\,\sin((a(t)))\,\frac{\partial }{\partial t} a(t)+\mathrm{cy}\,\cos(a(t))\,\frac{\partial }{\partial t} a(t)+\mathrm{cx}\,\sin(a(t))\,\frac{\partial }{\partial t} a(t))}{2}\\ \frac{m\,(2\,\frac{\partial }{\partial t} y(t)+\mathrm{cx}\,\cos((a(t)))\,\frac{\partial }{\partial t} a(t)-\mathrm{cy}\,\sin((a(t)))\,\frac{\partial }{\partial t} a(t)+\mathrm{cx}\,\cos(a(t))\,\frac{\partial }{\partial t} a(t)-\mathrm{cy}\,\sin(a(t))\,\frac{\partial }{\partial t} a(t))}{2} \end{array})
+		}\end{equation}
+		\begin{equation}
+		\tiny{
+			M=
+			(\begin{array}{c} -I\,\mathrm{ddat}-\frac{m\,(2\,\mathrm{cx}\,(\mathrm{ddyt}+\mathrm{cx}\,\mathrm{ddat})-2\,\mathrm{cy}\,(\mathrm{ddxt}-\mathrm{cy}\,\mathrm{ddat}))}{2}\\ -m\,(\mathrm{ddxt}-\mathrm{cy}\,\mathrm{ddat})\\ -m\,(\mathrm{ddyt}+\mathrm{cx}\,\mathrm{ddat}) \end{array})
+		}\end{equation}
+		\begin{equation}
+		\tiny{
+			C=
+			(\begin{array}{c} 0\\ \mathrm{cx}\,{\mathrm{dat}}^2\,m\\ \mathrm{cy}\,{\mathrm{dat}}^2\,m \end{array})
+		}\end{equation}
+		\begin{equation}
+		\tiny{
+			G=
+			(\begin{array}{c} 0\\ 0\\ 0 \end{array})
+		}\end{equation}
+		
+	\end{landscape}
+\end{document}
